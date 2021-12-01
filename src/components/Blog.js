@@ -10,8 +10,8 @@ const Blog = ({ sidebar }) => {
   const [totalPages, setTotalPages] = useState(1);
 
   const fetchPosts = async (page) => {
-    //const posts = await fetch(`https://idealeaf.herokuapp.com/posts`);
-    const data = await fetch(`http://localhost/posts/${page}`);
+    const posts = await fetch(`https://idealeaf.herokuapp.com/posts/${page}`);
+    //const data = await fetch(`http://localhost/posts/${page}`);
     const posts = await data.json();
     return posts;
   };

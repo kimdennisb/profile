@@ -148,6 +148,14 @@ section {
   text-decoration: none;
   cursor: pointer;
 }
+.more {
+  text-align: center;
+  margin-top: 2.5em;
+  cursor: pointer;
+}
+.more button {
+  font-size: large;
+}
 
 a,
 a:hover,

@@ -4,7 +4,7 @@ const Loader = () => {
       <svg
         width="25"
         height="25"
-        class="rotate"
+        className="rotate"
         viewBox="0 0 1792 1792"
         xmlns="http://www.w3.org/2000/svg"
       >

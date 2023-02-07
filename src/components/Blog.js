@@ -16,7 +16,7 @@ const Blog = ({ sidebar }) => {
   });
 
   const fetchPosts = async (page) => {
-    const data = await fetch(`https://idealeaf.herokuapp.com/posts/${page}`);
+    const data = await fetch(`https://idealeaf.vercel.app/posts/${page}`);
     // const data = await fetch(`http://localhost/posts/${page}`);
     const posts = await data.json();
     return posts;

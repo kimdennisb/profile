@@ -14,7 +14,7 @@ const Projects = ({ sidebar }) => {
         <p>Paginates data from an endpoint.</p>
 
         <a
-          href="https://idealeaf.herokuapp.com"
+          href="https://idealeaf.vercel.app"
           target="_blank"
           rel="noreferrer"
         >

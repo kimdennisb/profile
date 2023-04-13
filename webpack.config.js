@@ -6,7 +6,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "bundle.js",
-    publicPath:path.resolve(__dirname, "build"),
   },
   module: {
     rules: [
@@ -32,7 +31,7 @@ module.exports = {
         test: /\.(png|svg|jpe?g|gif|ico)$/i,
         exclude: /node_modules/,
         loader: "file-loader",
-        options: { name: "/public/[name].[ext]" },
+        options: { name: "/icons/[name].[ext]" },
         /* use: [
           {
             loader: "file-loader",

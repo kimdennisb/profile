@@ -1,5 +1,5 @@
-import image from "/public/image.png";
-//console.log(image)
+import image from "../icons/image.png";
+
 const Header = () => {
   const openSideBar = () => {
     const sidebar = document.querySelector(".sidebar");

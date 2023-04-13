@@ -49,5 +49,5 @@ module.exports = {
       manifest: "./public/manifest.json",
     }),
   ],
-  mode: "development",
+  mode: "production",
 };

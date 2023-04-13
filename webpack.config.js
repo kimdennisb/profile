@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "bundle.js",
+    publicPath:path.resolve(__dirname, "build"),
   },
   module: {
     rules: [
@@ -15,8 +16,11 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env", ["@babel/preset-react",{"runtime": "automatic"}],
-    ]},
+            presets: [
+              "@babel/preset-env",
+              ["@babel/preset-react", { runtime: "automatic" }],
+            ],
+          },
         },
       },
       {
@@ -25,9 +29,16 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif|ico)$/,
+        test: /\.(png|svg|jpe?g|gif|ico)$/i,
         exclude: /node_modules/,
-        use: ["file-loader?name=[name].[ext]"], // ?name=[name].[ext] is only necessary to preserve the original file name
+        loader: "file-loader",
+        options: { name: "/public/[name].[ext]" },
+        /* use: [
+          {
+            loader: "file-loader",
+          },
+        ],*/
+        // use: ["file-loader?name=public/[name].[ext]"], // ?name=[name].[ext] is only necessary to preserve the original file name
       },
     ],
   },
@@ -36,8 +47,8 @@ module.exports = {
       template: path.join(__dirname, "public", "index.html"),
       filename: "./index.html",
       favicon: "./public/favicon.ico",
-      manifest: "./public/manifest.json"
+      manifest: "./public/manifest.json",
     }),
   ],
-  mode:"development"
+  mode: "development",
 };

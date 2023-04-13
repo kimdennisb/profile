@@ -1,3 +1,5 @@
+import image from "/public/image.png";
+//console.log(image)
 const Header = () => {
   const openSideBar = () => {
     const sidebar = document.querySelector(".sidebar");
@@ -7,7 +9,7 @@ const Header = () => {
   return (
     <header>
       <a href="/" rel="norefferer">
-        <img src="image.png" alt="Avatar" className="avatar" />
+        <img src={image} alt="Avatar" className="avatar" />
       </a>
 
       <div className="opensidebar">

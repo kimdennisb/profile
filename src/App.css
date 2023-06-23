@@ -134,7 +134,7 @@ section {
   background-color: #f2f5f7;
   transition: width 0.3s;
   z-index: 9999;
-  box-shadow: -5px -5px #e9e8e8;
+  box-shadow: -2px -2px rgb(216, 216, 216);
 }
 .projects {
   width: 100%;

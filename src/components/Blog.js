@@ -4,10 +4,6 @@ import Loader from "./Loader";
 import More from "./More";
 
 const Blog = ({ sidebar }) => {
-  /* const [articles, setArticles] = useState([]);
-  const [isLoading, setLoading] = useState(true);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);*/
   const [blogState, setBlogState] = useState({
     articles: [],
     isLoading: true,
@@ -17,7 +13,7 @@ const Blog = ({ sidebar }) => {
 
   const fetchPosts = async (page) => {
     const data = await fetch(`https://idealeaf.vercel.app/posts/${page}`);
-    // const data = await fetch(`http://localhost/posts/${page}`);
+   // const data = await fetch(`http://localhost/posts/${page}`);
     const posts = await data.json();
     return posts;
   };

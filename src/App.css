@@ -150,11 +150,10 @@ section {
 }
 .more {
   text-align: center;
-  margin-top: 2.5em;
-  cursor: pointer;
 }
 .more button {
   font-size: large;
+  cursor: pointer;
 }
 .Error404 {
   text-align: center;
@@ -180,7 +179,7 @@ a:active {
 @media (min-width: 768px) {
   section {
     width: 80%;
-    top: 2em;
+    /*top: 2em;*/
   }
   .projects {
     width: 80%;

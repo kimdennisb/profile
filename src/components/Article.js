@@ -2,7 +2,7 @@ const Article = ({ post }) => {
   const buildDate = (isodate) => {
     const date = new Date(isodate);
     const year = date.getFullYear();
-    const month = date.getMonth() + 1;
+    const month = date.getMonth();
     const dt = date.getDate();
     const monthNames = [
       "January",

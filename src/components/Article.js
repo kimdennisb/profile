@@ -26,7 +26,7 @@ const Article = ({ post }) => {
       {!post.feature_image ? (
         <div className="article_title onlytext">
           <a
-            href={`https://idealeaf.vercel.app/article/${post._id}`}
+            href={`https://idealeaf.vercel.app/article/${post.reference}`}
             target="_self"
             rel="norefferer"
           >
@@ -37,7 +37,7 @@ const Article = ({ post }) => {
       ) : (
         <div className="article_title">
           <a
-            href={`https://idealeaf.vercel.app/article/${post._id}`}
+            href={`https://idealeaf.vercel.app/article/${post.reference}`}
             target="_self"
             rel="norefferer"
           >

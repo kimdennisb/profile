@@ -70,7 +70,7 @@ section {
   margin-right: auto;
 }
 
-.widget > * + * {
+.widget>*+* {
   margin-top: 1.25em;
 }
 
@@ -81,6 +81,7 @@ section {
 }
 
 @media (max-width: 850px) {
+
   .widget,
   .showwidget {
     float: none;
@@ -91,7 +92,7 @@ section {
   }
 }
 
-.widget > div {
+.widget>div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -107,7 +108,7 @@ section {
   width: 100%;
 }
 
-.article_title > a {
+.article_title>a {
   text-decoration: none;
   color: #333;
   display: block;
@@ -136,9 +137,11 @@ section {
   z-index: 9999;
   box-shadow: -2px -2px rgb(216, 216, 216);
 }
+
 .projects {
   width: 100%;
 }
+
 .sidebar a {
   position: relative;
   left: 30px;
@@ -148,19 +151,23 @@ section {
   text-decoration: none;
   cursor: pointer;
 }
+
 .more {
   text-align: center;
 }
+
 .more button {
   font-size: large;
   cursor: pointer;
 }
+
 .Error404 {
   text-align: center;
   margin: 15px;
   font-size: larger;
   font-weight: bold;
 }
+
 a,
 a:hover,
 a:focus,
@@ -172,6 +179,7 @@ a:active {
 .closeNav {
   cursor: pointer;
 }
+
 .socials a {
   margin: 3px;
 }
@@ -181,18 +189,20 @@ a:active {
     width: 80%;
     /*top: 2em;*/
   }
+
   .projects {
     width: 80%;
   }
 }
 
 /*loading spinner before data is rendered*/
+.loader {
+  text-align: center;
+}
+
 .loader svg {
   position: relative;
-  text-align: center;
-  width: 100%;
   top: 3em;
-  text-align: center;
   -webkit-animation-name: spin;
   -webkit-animation-duration: 2000ms;
   -webkit-animation-iteration-count: infinite;
@@ -215,6 +225,7 @@ a:active {
   from {
     -ms-transform: rotate(0deg);
   }
+
   to {
     -ms-transform: rotate(360deg);
   }
@@ -224,6 +235,7 @@ a:active {
   from {
     -moz-transform: rotate(0deg);
   }
+
   to {
     -moz-transform: rotate(360deg);
   }
@@ -233,6 +245,7 @@ a:active {
   from {
     -webkit-transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(360deg);
   }
@@ -242,6 +255,7 @@ a:active {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

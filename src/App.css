@@ -154,6 +154,13 @@ section {
   padding: 8px;
   text-decoration: none;
   cursor: pointer;
+  transition: box-shadow 1s;
+  transition-timing-function: ease;
+  width: fit-content;
+}
+
+.sidebar a:hover {
+  box-shadow: 0 1px 0.5px gray;
 }
 
 .more {

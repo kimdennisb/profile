@@ -40,6 +40,10 @@ header .avatar {
   border-width: 0;
 }
 
+.closenav {
+  cursor: pointer;
+}
+
 .avatar {
   height: 18px;
   width: 18px;

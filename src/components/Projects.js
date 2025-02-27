@@ -5,6 +5,15 @@ const Projects = ({ sidebar }) => {
       <div className="projects">
         <h2>Projects</h2>
         <a
+          href="https://visafinders.au"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="visafinders">Visafinders</button>
+        </a>
+        <p>A multilingual interactive online tool that helps visa candidates self-assess their eligibility and familiarise themselves with different options available.</p>
+
+        <a
           href="https://paginatejs.netlify.app"
           target="_blank"
           rel="noreferrer"
